@@ -6,4 +6,6 @@ import com.amith.springcloud.model.Coupon;
 
 public interface CouponRepo extends JpaRepository<Coupon, Long> {
 
+	Coupon findByCode(String code);
+
 }
